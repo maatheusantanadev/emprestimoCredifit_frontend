@@ -1,0 +1,36 @@
+.credifiti-teal { background-color: #0d9488; }
+.credifiti-teal-light { background-color: #14b8a6; }
+.browser-bar {
+    background: linear-gradient(to bottom, #f3f4f6, #e5e7eb);
+    border-bottom: 1px solid #d1d5db;
+}
+.tab-active {
+    background: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.header {
+    background-color: #0d9488;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo::before {
+    content: "🔥";
+    margin-right: 0.5rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

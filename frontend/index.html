@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credifit - Internet Banking</title>
+    <link rel="stylesheet" href="/frontend/css/index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">credifit</div>
+        <div class="user-info">
+            <div class="user-avatar">👤</div>
+            <span id="userName">Carregando...</span>
+            <span>▼</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            Home / Crédito Consignado
+        </nav>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <button class="back-button">‹</button>
+            <h1 class="page-title">Crédito Consignado</h1>
+        </div>
+
+        <!-- Section Title -->
+        <h2 class="section-title">Simular Empréstimo</h2>
+
+        <!-- Notification -->
+        <div class="notification">
+            <div class="notification-avatar">👨‍💼</div>
+            <div class="notification-text">
+                Você possui saldo para Crédito Consignado pela empresa: <span id="empresa">Carregando...</span>. Faça uma simulação! Digite quanto você precisa:
+            </div>
+        </div>
+
+        <!-- Informações do Funcionário -->
+    <div class="info-container">
+        <p><strong>Funcionário:</strong> <span id="funcionario">Carregando...</span></p>
+        <p><strong>Salário:</strong> <span id="salario">R$ 0,00</span></p>
+        <p><strong>Margem disponível (35%):</strong> <span id="margem">R$ 0,00</span></p>
+    </div>
+
+    <!-- Amount Display -->
+    <div class="amount-container">
+        <div class="amount-display">
+            <div class="amount-value" id="amountValue">R$ 0,00</div>
+        </div>
+    </div>
+
+    <!-- Slider -->
+    <div class="slider-container">
+        <input type="range" min="100" max="1000" value="100" class="slider" id="amountSlider">
+    </div>
+
+    <!-- Buttons -->
+    <div class="button-container">
+        <button class="button button-outline">Voltar</button>
+        <a href="simulation.html"><button class="button button-filled">Simular empréstimo</button></a>
+    </div>
+    </main>
+
+    <script src="/frontend/js/index.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credifiti - Internet Banking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/loan.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    
+    <!-- Main Application -->
+    <div class="min-h-screen">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">credifit</div>
+            <div class="user-info">
+                <div class="user-avatar">👤</div>
+                <span id="userName">Carregando...</span>
+                <span>▼</span>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <main class="max-w-4xl mx-auto px-6 py-8">
+            <!-- Breadcrumb -->
+            <div class="flex items-center space-x-2 text-gray-600 mb-4">
+                <span class="text-2xl">←</span>
+                <nav class="text-sm">
+                    <span>Home</span>
+                    <span class="mx-2">/</span>
+                    <span>Crédito Consignado</span>
+                </nav>
+            </div>
+
+            <!-- Page Title -->
+            <h1 class="text-2xl font-semibold text-teal-600 mb-8">Crédito Consignado</h1>
+
+            <!-- Simulation Summary -->
+            <section>
+                <h2 class="text-xl font-semibold text-teal-600 mb-6">Resumo da simulação</h2>
+
+                <!-- Notification Card -->
+                <div class="bg-orange-100 border border-orange-200 rounded-lg p-4 mb-8">
+                    <div class="flex items-start space-x-3">
+                        <div class="w-10 h-10 bg-orange-300 rounded-full flex items-center justify-center text-white text-lg">
+                            👤
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-gray-700 leading-relaxed">
+                                Pronto! Agora você já pode solicitar o empréstimo e recebê-lo na sua Conta Credifiti! Veja o resumo da simulação!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summary Details -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6 mb-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-gray-700 font-medium mb-2">Valor a Creditar</h3>
+                            <p class="text-gray-600 text-lg" id="valorCreditar">R$ 0,00</p>
+                        </div>
+                        <div>
+                            <h3 class="text-gray-700 font-medium mb-2">Valor a financiar</h3>
+                            <p class="text-gray-600 text-lg" id="valorFinanciar">R$ 0,00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <h3 class="text-gray-700 font-medium mb-2">Parcelamento</h3>
+                        <p class="text-gray-600 text-lg" id="parcelamento">--</p>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="window.history.back()" class="px-8 py-3 border-2 border-teal-600 text-teal-600 rounded-full font-medium hover:bg-teal-50 transition-colors">
+                        Voltar
+                    </button>
+                    <button class="px-8 py-3 bg-teal-600 text-white rounded-full font-medium hover:bg-teal-700 transition-colors"
+                            onclick="solicitarEmprestimo()">
+                        Solicitar empréstimo
+                    </button>
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/loan.js"></script>
+</body>
+</html>

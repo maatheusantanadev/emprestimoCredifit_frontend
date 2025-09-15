@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credifiti - Status do Empréstimo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/status.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">credifit</div>
+        <div class="user-info">
+            <div class="user-avatar">👤</div>
+            <span id="userName">Carregando...</span>
+            <span style="margin-left: 8px;">▼</span>
+        </div>
+    </header>
+
+    <main class="container mx-auto flex gap-6 py-8">
+        <div class="bg-white p-6 rounded-b-lg shadow-sm w-full">
+            <!-- Breadcrumb -->
+            <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+                <span>←</span>
+                <span>Home</span>
+                <span>/</span>
+                <span>Crédito Consignado</span>
+            </div>
+
+            <h2 class="text-xl font-semibold text-teal-600 mb-6">Crédito Consignado</h2>
+
+            <!-- Card de notificação -->
+            <div class="bg-orange-50 border border-orange-200 rounded-lg p-4 mb-6 flex items-start gap-3">
+                <div class="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center text-white font-bold">
+                    👤
+                </div>
+                <p class="text-gray-700">
+                    Você solicitou seu empréstimo! Agora aguarde as etapas de análises serem concluídas!
+                </p>
+            </div>
+
+            <!-- Área de Cards -->
+            <div id="cardsArea" class="space-y-4 mb-8">
+                <!-- Será preenchido dinamicamente -->
+            </div>
+
+            <!-- Botões -->
+            <div class="flex gap-4">
+                <button onclick="novoEmprestimo()" class="px-8 py-3 bg-teal-600 text-white rounded-full font-medium hover:bg-teal-700 transition-colors">
+                    Novo empréstimo
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="/frontend/js/status.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credifit - Internet Banking</title>
+    <link rel="stylesheet" href="/frontend/css/simulation.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">credifit</div>
+        <div class="user-info">
+            <div class="user-avatar">👤</div>
+            <span id="userName">Carregando...</span>
+            <span style="margin-left: 8px;">▼</span>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="breadcrumb">Home / Crédito Consignado</div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 40px;">
+            <span class="back-arrow">‹</span>
+            <h1 class="page-title">Crédito Consignado</h1>
+        </div>
+
+        <div class="simulation-section">
+            <h2 class="section-title">Simular Empréstimo</h2>
+
+            <div class="info-card">
+                <div class="avatar">👨</div>
+                <div class="info-text">
+                    Escolha a opção de parcelamento que melhor funcionar para você:
+                </div>
+            </div>
+
+            <!-- Valor do Empréstimo -->
+            <div class="loan-amount">
+                <div class="amount" id="loanAmount">R$ 0,00</div>
+            </div>
+
+            <div class="installments-label">Divididas em:</div>
+
+            <!-- Grid de parcelas -->
+            <div class="installments-grid" id="installmentsGrid">
+                <!-- JS vai preencher automaticamente -->
+            </div>
+
+            <div class="buttons">
+                <a href="index.html"><button class="btn btn-outline">Voltar</button></a>
+                <a href="/frontend/loan.html"><button class="btn btn-disabled">Seguinte</button></a>
+            </div>
+        </div>
+    </main>
+
+    <script src="/frontend/js/simulation.js"></script>
+</body>
+</html>
